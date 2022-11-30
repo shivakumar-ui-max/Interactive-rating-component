@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+   /* ### Primary */
+
+   --Orange: hsl(25, 97%, 53%);
+
+   /* ### Neutral */
+
+   --White: hsl(0, 0%, 100%);
+   --Light-Grey: hsl(217, 12%, 63%);
+   --Medium-Grey: #7c8798;
+   --Dark-Blue: hsl(213, 19%, 18%);
+   --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+
+}
+
+/* .hidden {
+   display: block;
+} */
+.container-1 {
+   display: block;
+}
+
+.container-2 {
+   display: none;
+}
+
+body {
+   min-height: 100vh;
+   background-color: var(--Very-Dark-Blue);
+   color: var(--White);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 5vw;
+   font-family: 'Overpass', sans-serif;
+}
+
+.container-1,
+.container-2 {
+   background-color: var(--Dark-Blue);
+   padding: 1.5rem;
+   border-radius: 10px;
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+   max-width: 375px;
+}
+
+figure {
+   width: 40px;
+   height: 40px;
+   background-color: hsla(217, 12%, 63%, 0.1);
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container-1 h1 {
+   margin-top: 1.2rem;
+   color: var(--White);
+   font-weight: 700;
+   font-size: 1.8rem;
+}
+
+.container-1 p {
+   margin-top: 1rem;
+   color: var(--Light-Grey);
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.rating {
+   margin: 1rem 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+.container-1 span {
+   width: 45px;
+   height: 45px;
+   background-color: hsla(217, 12%, 63%, 0.1);
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   color: var(--Light-Grey);
+   font-weight: 700;
+   cursor: pointer;
+   transition: .5s;
+}
+
+.btn {
+   margin: 1rem 0;
+   padding: .8rem 8rem;
+   border-radius: 2rem;
+   border: none;
+   font-size: 1.3rem;
+   background-color: var(--Orange);
+   color: var(--White);
+   font-weight: 600;
+   cursor: pointer;
+   transition: .5s;
+}
+
+.container-2 figure {
+   margin: 2.5rem auto 0 auto;
+}
+
+.container-2 h1 {
+   text-align: center;
+   margin-top: 1rem;
+   font-size: 1.5rem;
+}
+
+.container-2 h3 {
+   text-align: center;
+   margin: 3.5rem 0 0 0;
+   color: var(--Orange);
+   font-size: 1rem;
+   /* border-radius: 2rem; */
+   /* display: inline-block; */
+}
+
+.container-2 p {
+   margin: 1rem 0;
+   font-size: 1rem;
+   text-align: center;
+   color: var(--Light-Grey);
+}
+
+
+/* ######### hover effect  ######### */
+.btn:hover {
+   background-color: var(--White);
+   color: var(--Orange);
+}
+
+.num:hover {
+   background-color: var(--Orange);
+}
+
+.container-1 .rating {
+   color: var(--White);
+}
